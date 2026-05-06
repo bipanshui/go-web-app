@@ -4,88 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>    
+    <title>Learn DevOps from Basics</title>
+    <link rel="stylesheet" href="/static/site.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="courses">Courses</a></li>
-            </ul>
-        </nav>
+    <header class="topbar">
+        <div class="site-shell topbar-inner">
+            <a class="brand" href="/home" aria-label="Go to home page">
+                <span class="brand-mark">D</span>
+                <span>
+                    DevOps Academy
+                    <span class="brand-subtitle">Practical learning from zero to hero</span>
+                </span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a class="is-active" href="/home">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/courses">Courses</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h1>Learn DevOps from Basics</h1>
-            <p>The main purpose of this website is to guide people on how to learn DevOps 
-                from basics for Free. We will provide you with the best resources to learn.
-            </p>
-        </section>
+    <main class="page">
+        <div class="site-shell">
+            <section class="hero">
+                <p class="eyebrow">Free DevOps roadmap</p>
+                <h1>Learn DevOps with clarity, structure, and real projects.</h1>
+                <p>
+                    This site guides you from the fundamentals to production-ready workflows.
+                    Start with the core ideas, move through the major tools, and build enough confidence
+                    to ship practical infrastructure and automation work.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="/courses">Explore courses</a>
+                    <a class="button secondary" href="/about">Meet the author</a>
+                </div>
 
-        <section>
-            <h2>Overview</h2>
-            <p> Zero to Hero courses on all DevOps tools and popular Cloud(AWS and Azure) platform</p>
-        </section>
+                <div class="stats" aria-label="Highlights">
+                    <div class="stat-card">
+                        <strong>Zero to hero</strong>
+                        <span>Structured playlists for beginners and intermediate learners.</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>Cloud ready</strong>
+                        <span>AWS, Azure, Terraform, and Kubernetes-focused learning tracks.</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>Project based</strong>
+                        <span>Focus on practical workflows instead of isolated tool demos.</span>
+                    </div>
+                </div>
+            </section>
 
-        <section>
-            <h2>Courses Offered</h2>
-            <p>Please look at the <a href="courses">courses</a> section.</p>  
-        </section>
+            <section class="section">
+                <h2>What you get here</h2>
+                <div class="content-grid">
+                    <article class="content-card" style="grid-column: span 7;">
+                        <p>
+                            DevOps is easier to learn when the journey is broken into small, useful pieces.
+                            The content on this site is organized to help you understand why each tool matters
+                            before you start memorizing commands.
+                        </p>
+                        <p>
+                            You will find the main ideas behind automation, deployment, infrastructure, and
+                            cloud operations, along with recommended playlists to keep your momentum high.
+                        </p>
+                    </article>
+                    <article class="content-card" style="grid-column: span 5;">
+                        <ul class="feature-list">
+                            <li><span class="feature-dot"></span><span>Begin with DevOps fundamentals and the delivery lifecycle.</span></li>
+                            <li><span class="feature-dot"></span><span>Move into CI/CD, infrastructure as code, and cloud services.</span></li>
+                            <li><span class="feature-dot"></span><span>Use playlists that map directly to hands-on practice.</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Next step</h2>
+                <div class="content-grid">
+                    <article class="content-card" style="grid-column: span 12;">
+                        <p>
+                            If you are starting from scratch, go to the <a href="/courses">courses page</a> and
+                            follow the playlists in order. If you want the story behind the content, visit the
+                            <a href="/about">about page</a>.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; Abhishek.Veeramalla</p>
+    <footer class="footer">
+        <div class="site-shell">
+            <p>&copy; Abhishek.Veeramalla</p>
+        </div>
     </footer>
 </body>
 </html>

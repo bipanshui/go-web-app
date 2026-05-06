@@ -1,90 +1,94 @@
-<Docktype html>
-<html>
-    <head>
-        <title>About</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
-
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
-
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/static/site.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="site-shell topbar-inner">
+            <a class="brand" href="/home" aria-label="Go to home page">
+                <span class="brand-mark">D</span>
+                <span>
+                    DevOps Academy
+                    <span class="brand-subtitle">Practical learning from zero to hero</span>
+                </span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="/home">Home</a>
+                <a class="is-active" href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/courses">Courses</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <section>
-                <h1>About the Author</h1>
-                <p>Hi Everyone, My name is Abhishek and welcome to my channel :)</p>
-
-                    <p>    I am an opensource enthusiast and a great believer in sharing knowledge. </p>
-                        <p>  I have my footprints in popular opensource projects like Argo CD, Argo CD Operator, Argo Rollouts Manager, GitOps Operator, F5 Ingress Controller, Nginx Ingress Controller by Nginx and others. </p>
-                    
-                            <p> Apart from working with Red Hat as a GitOps product lead, I also hold below positions in OpenSource communities</p>
-                                <p>  - Maintainer of Argo CD Operator</p>
-                                    <p> - Creator of Argo Rollouts Manager</p>
-                                        <p> - Maintainer of RedHat Developer (GitOps operator)</p>
-                                            <p> - Member of Argo Project</p>
-                                                <p> - Member of Argo SIG Security</p>
-                    
-                                                    <p> If you want to learn complete devops for free with practical projects, checkout the playlist</p>
-                                                        <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa"> Playlists</a></p>
-                    
-                                                            <p> Please subscribe to the channel to keep learning and growing together. Thanks :)</p>
+    <main class="page">
+        <div class="site-shell">
+            <section class="hero">
+                <p class="eyebrow">About the author</p>
+                <h1>Practical DevOps teaching, shaped by real-world engineering work.</h1>
+                <p>
+                    Abhishek builds and shares content with a focus on helping people understand the
+                    ecosystem, not just the syntax. The goal is to make the learning path approachable,
+                    useful, and grounded in the workflows teams actually use.
+                </p>
             </section>
-        </main>
 
-        <footer>
+            <section class="section">
+                <div class="content-grid">
+                    <article class="content-card" style="grid-column: span 7;">
+                        <h2>Why this content exists</h2>
+                        <p>
+                            Learning DevOps can feel fragmented. There are too many tools, too many opinions,
+                            and too little structure for someone starting out. This site keeps the learning
+                            path simple: understand the fundamentals, practice the tools, and then combine them
+                            into working systems.
+                        </p>
+                        <p>
+                            The courses are built around free playlists, hands-on demos, and repeatable patterns
+                            so you can build confidence without being overwhelmed.
+                        </p>
+                    </article>
+
+                    <article class="content-card" style="grid-column: span 5;">
+                        <h2>Focus areas</h2>
+                        <ul class="feature-list">
+                            <li><span class="feature-dot"></span><span>Open source collaboration and community contributions.</span></li>
+                            <li><span class="feature-dot"></span><span>GitOps, Kubernetes, cloud platforms, and infrastructure automation.</span></li>
+                            <li><span class="feature-dot"></span><span>Clear explanations that reduce friction for beginners.</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="content-grid">
+                    <article class="content-card" style="grid-column: span 12;">
+                        <h2>Community work</h2>
+                        <p>
+                            Abhishek has contributed to open source projects such as Argo CD, Argo Rollouts
+                            Manager, GitOps Operator, and related ecosystem projects. The teaching style on this
+                            site reflects that background: practical, opinionated where it matters, and focused
+                            on what helps you ship better systems.
+                        </p>
+                        <p>
+                            If you want the most direct learning path, head to the <a href="/courses">courses</a>
+                            page and follow the curated playlists in order.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="site-shell">
             <p>&copy; Abhishek.Veeramalla</p>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 </html>
