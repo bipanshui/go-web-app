@@ -1,68 +1,98 @@
-<Doctype html>
-<html>
-    <head>
-        <title>Contact</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
-
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
-
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/static/site.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="site-shell topbar-inner">
+            <a class="brand" href="/home" aria-label="Go to home page">
+                <span class="brand-mark">D</span>
+                <span>
+                    DevOps Academy
+                    <span class="brand-subtitle">Practical learning from zero to hero</span>
+                </span>
+            </a>
+            <nav class="nav" aria-label="Primary">
+                <a href="/home">Home</a>
+                <a href="/about">About</a>
+                <a class="is-active" href="/contact">Contact</a>
+                <a href="/courses">Courses</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <section>
-                <h1>Contact Us</h1>
-                <p>For any doubts while learning, Join our Members only exclusive slack channel</p>
-                <a href="https://www.youtube.com/abhishekVeeramalla/join">Join Slack</a>
+    <main class="page">
+        <div class="site-shell">
+            <section class="hero">
+                <p class="eyebrow">Contact and support</p>
+                <h1>Need help while learning? Start here.</h1>
+                <p>
+                    The community is built for learners who want quick answers, practical help, and a
+                    place to keep moving when a tutorial gets stuck. Reach out through the official links
+                    below.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="https://www.youtube.com/abhishekVeeramalla/join">Join Slack</a>
+                    <a class="button secondary" href="/courses">Browse courses</a>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="contact-grid">
+                    <article class="contact-card content-card">
+                        <h2>Best ways to connect</h2>
+                        <ul class="contact-list">
+                            <li>
+                                <span class="feature-dot"></span>
+                                <span>
+                                    <strong>Members-only Slack</strong><br>
+                                    Ask questions, share progress, and get help from the community.
+                                </span>
+                            </li>
+                            <li>
+                                <span class="feature-dot"></span>
+                                <span>
+                                    <strong>YouTube playlists</strong><br>
+                                    Use the tutorial links on the courses page to follow along at your own pace.
+                                </span>
+                            </li>
+                            <li>
+                                <span class="feature-dot"></span>
+                                <span>
+                                    <strong>Course feedback</strong><br>
+                                    If you spot a gap or want a topic covered, mention it when you reach out.
+                                </span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="contact-card content-card">
+                        <h2>What to include</h2>
+                        <p>
+                            When you ask for help, include the course name, the exact step you reached, and the
+                            error message or output you are seeing. Clear context usually gets you a faster
+                            answer.
+                        </p>
+                        <ul class="feature-list">
+                            <li><span class="feature-dot"></span><span>State the topic or playlist you are following.</span></li>
+                            <li><span class="feature-dot"></span><span>Share the command, screenshot, or error text.</span></li>
+                            <li><span class="feature-dot"></span><span>Explain what you expected to happen.</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="site-shell">
+            <p>&copy; Abhishek.Veeramalla</p>
+        </div>
+    </footer>
+</body>
+</html>
