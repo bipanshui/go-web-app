@@ -7,14 +7,14 @@
     <title>Courses</title>
     <link rel="stylesheet" href="/static/site.css">
 </head>
-<body>
-    <header class="topbar">
+<body class="courses-page">
+    <header class="topbar topbar-quiet">
         <div class="site-shell topbar-inner">
-            <a class="brand" href="/home" aria-label="Go to home page">
+            <a class="brand brand-quiet" href="/home" aria-label="Go to home page">
                 <span class="brand-mark">D</span>
                 <span>
                     DevOps Academy
-                    <span class="brand-subtitle">Practical learning from zero to hero</span>
+                    <span class="brand-subtitle">Curated playlists, no clutter</span>
                 </span>
             </a>
             <nav class="nav" aria-label="Primary">
@@ -26,65 +26,170 @@
         </div>
     </header>
 
-    <main class="page">
-        <div class="site-shell">
-            <section class="hero">
-                <p class="eyebrow">Course catalog</p>
-                <h1>A focused DevOps roadmap built around free tutorials.</h1>
+    <main class="page page-courses">
+        <div class="site-shell courses-shell">
+            <section class="courses-intro">
+                <p class="eyebrow eyebrow-quiet">Courses</p>
+                <h1>Minimal DevOps learning path.</h1>
                 <p>
-                    Start with the core fundamentals, then move into cloud, automation, and debugging
-                    tracks. Each section below groups related learning so you can keep your progress
-                    organized.
+                    Open the playlist, scan the thumbnail, and move in order. The page stays light and
+                    keeps the focus on the content.
                 </p>
             </section>
 
-            <section class="section">
-                <div class="course-grid">
-                    <article class="course-card">
-                        <h3>Main Tutorials</h3>
-                        <p>Start here if you want the broad DevOps foundation first.</p>
-                        <ul class="course-list">
-                            <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa">DevOps Zero to Hero</a></li>
-                            <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze">AWS Zero to Hero</a></li>
-                            <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR">Azure Zero to Hero</a></li>
-                            <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf">Terraform Zero to Hero</a></li>
-                            <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv">Python Zero to Hero</a></li>
-                        </ul>
+            <section class="course-group" aria-labelledby="main-tutorials">
+                <div class="course-group-head">
+                    <h2 id="main-tutorials">Main Tutorials</h2>
+                    <p>Core tracks for the first pass.</p>
+                </div>
+
+                <div class="course-stack">
+                    <article class="course-item">
+                        <a class="course-thumb" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa">
+                            <img data-youtube-thumbnail alt="DevOps Zero to Hero thumbnail" loading="lazy">
+                        </a>
+                        <div class="course-copy">
+                            <h3>DevOps Zero to Hero</h3>
+                            <p>Start here for the broad foundation.</p>
+                            <a class="course-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa">Open playlist</a>
+                        </div>
                     </article>
 
-                    <article class="course-card">
-                        <h3>Additional Tutorials</h3>
-                        <p>Use these to deepen the supporting skills around DevOps work.</p>
-                        <ul class="course-list">
-                            <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-">Networking Fundamentals</a></li>
-                            <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE">Ansible Zero to Hero</a></li>
-                            <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f">GitOps Zero to Hero</a></li>
-                        </ul>
+                    <article class="course-item">
+                        <a class="course-thumb" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze">
+                            <img data-youtube-thumbnail alt="AWS Zero to Hero thumbnail" loading="lazy">
+                        </a>
+                        <div class="course-copy">
+                            <h3>AWS Zero to Hero</h3>
+                            <p>Keep cloud basics close to the core roadmap.</p>
+                            <a class="course-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze">Open playlist</a>
+                        </div>
+                    </article>
+
+                    <article class="course-item">
+                        <a class="course-thumb" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR">
+                            <img data-youtube-thumbnail alt="Azure Zero to Hero thumbnail" loading="lazy">
+                        </a>
+                        <div class="course-copy">
+                            <h3>Azure Zero to Hero</h3>
+                            <p>A clean path into the Azure ecosystem.</p>
+                            <a class="course-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR">Open playlist</a>
+                        </div>
+                    </article>
+
+                    <article class="course-item">
+                        <a class="course-thumb" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf">
+                            <img data-youtube-thumbnail alt="Terraform Zero to Hero thumbnail" loading="lazy">
+                        </a>
+                        <div class="course-copy">
+                            <h3>Terraform Zero to Hero</h3>
+                            <p>Infrastructure as code without the noise.</p>
+                            <a class="course-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf">Open playlist</a>
+                        </div>
+                    </article>
+
+                    <article class="course-item">
+                        <a class="course-thumb" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv">
+                            <img data-youtube-thumbnail alt="Python Zero to Hero thumbnail" loading="lazy">
+                        </a>
+                        <div class="course-copy">
+                            <h3>Python Zero to Hero</h3>
+                            <p>Useful scripting for automation tasks.</p>
+                            <a class="course-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv">Open playlist</a>
+                        </div>
                     </article>
                 </div>
             </section>
 
-            <section class="section">
-                <div class="content-grid">
-                    <article class="content-card" style="grid-column: span 12;">
-                        <h2>Troubleshooting</h2>
-                        <p>
-                            When you get stuck, switch from learning mode to debugging mode. Re-run the step,
-                            read the error carefully, and isolate the system boundary that is failing.
-                        </p>
-                        <ul class="course-list">
-                            <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX">Troubleshooting Kubernetes</a></li>
-                        </ul>
+            <section class="course-group" aria-labelledby="supporting-tutorials">
+                <div class="course-group-head">
+                    <h2 id="supporting-tutorials">Supporting Tutorials</h2>
+                    <p>Skills that make the main path smoother.</p>
+                </div>
+
+                <div class="course-stack">
+                    <article class="course-item">
+                        <a class="course-thumb" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-">
+                            <img data-youtube-thumbnail alt="Networking Fundamentals thumbnail" loading="lazy">
+                        </a>
+                        <div class="course-copy">
+                            <h3>Networking Fundamentals</h3>
+                            <p>Keep the networking layer simple and visible.</p>
+                            <a class="course-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-">Open playlist</a>
+                        </div>
+                    </article>
+
+                    <article class="course-item">
+                        <a class="course-thumb" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE">
+                            <img data-youtube-thumbnail alt="Ansible Zero to Hero thumbnail" loading="lazy">
+                        </a>
+                        <div class="course-copy">
+                            <h3>Ansible Zero to Hero</h3>
+                            <p>Automation workflows with a small surface area.</p>
+                            <a class="course-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE">Open playlist</a>
+                        </div>
+                    </article>
+
+                    <article class="course-item">
+                        <a class="course-thumb" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f">
+                            <img data-youtube-thumbnail alt="GitOps Zero to Hero thumbnail" loading="lazy">
+                        </a>
+                        <div class="course-copy">
+                            <h3>GitOps Zero to Hero</h3>
+                            <p>Keep deployment flow declarative and readable.</p>
+                            <a class="course-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f">Open playlist</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="course-group" aria-labelledby="troubleshooting">
+                <div class="course-group-head">
+                    <h2 id="troubleshooting">Troubleshooting</h2>
+                    <p>One focused track for debugging practice.</p>
+                </div>
+
+                <div class="course-stack">
+                    <article class="course-item">
+                        <a class="course-thumb" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX">
+                            <img data-youtube-thumbnail alt="Troubleshooting Kubernetes thumbnail" loading="lazy">
+                        </a>
+                        <div class="course-copy">
+                            <h3>Troubleshooting Kubernetes</h3>
+                            <p>Read failures, isolate the boundary, then retry.</p>
+                            <a class="course-link" href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX">Open playlist</a>
+                        </div>
                     </article>
                 </div>
             </section>
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer-quiet">
         <div class="site-shell">
             <p>&copy; Abhishek.Veeramalla</p>
         </div>
     </footer>
+
+    <script>
+        document.querySelectorAll("[data-youtube-thumbnail]").forEach((img) => {
+            const card = img.closest(".course-item");
+            const link = card ? card.querySelector(".course-thumb") : null;
+            if (!link) {
+                return;
+            }
+
+            fetch(`/api/youtube-thumbnail?url=${encodeURIComponent(link.href)}`)
+                .then((response) => response.ok ? response.json() : Promise.reject())
+                .then((data) => {
+                    if (data && data.thumbnail_url) {
+                        img.src = data.thumbnail_url;
+                    }
+                })
+                .catch(() => {
+                    img.src = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' rx='28' fill='%23f2f2f2'/%3E%3C/svg%3E";
+                });
+        });
+    </script>
 </body>
 </html>

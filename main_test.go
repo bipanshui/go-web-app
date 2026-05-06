@@ -6,6 +6,7 @@ import (
 	"io"
 	"net/http"
 	"net/http/httptest"
+	"strings"
 	"testing"
 )
 
@@ -71,5 +72,29 @@ func TestStaticStylesheetServed(t *testing.T) {
 
 	if len(body) == 0 {
 		t.Fatal("expected stylesheet body to be non-empty")
+	}
+}
+
+func TestYouTubeThumbnailEndpoint(t *testing.T) {
+	req, err := http.NewRequest("GET", "/api/youtube-thumbnail?url="+
+		"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	rr := httptest.NewRecorder()
+	newMux().ServeHTTP(rr, req)
+
+	if status := rr.Code; status != http.StatusOK {
+		t.Fatalf("handler returned wrong status code: got %v want %v", status, http.StatusOK)
+	}
+
+	body, err := io.ReadAll(rr.Body)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if !strings.Contains(string(body), "img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg") {
+		t.Fatalf("expected thumbnail URL in response, got %s", string(body))
 	}
 }
